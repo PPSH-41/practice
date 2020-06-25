@@ -7,12 +7,12 @@ public class Employee {
     private double salary;
     private LocalDate hireDay;
 
-    public Employee(String n,double s,int year,int month,int day)
-    {
-        name=n;
-        salary=s;
-        hireDay=LocalDate.of(year,month,day);
+    public Employee(String n, double s, int year, int month, int day) {
+        name = n;
+        salary = s;
+        hireDay = LocalDate.of(year, month, day);
     }
+
     public String getName() {
         return name;
     }
@@ -26,7 +26,8 @@ public class Employee {
     }
 
     public void raiseSalary(double byPercent) {
-        double raise =salary * byPercent / 100;
-        salary += raise;
+        double raise = this.salary * byPercent / 100;
+        this.salary += raise;
     }
 }
+
