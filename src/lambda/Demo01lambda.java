@@ -9,7 +9,7 @@ public class Demo01lambda {
             }
         }).start();
 
-        new Thread(()->{
+        new Thread(()->{//->参数传给方法体
             System.out.println(Thread.currentThread().getName());
         }).start();
     }
