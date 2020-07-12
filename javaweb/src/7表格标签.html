@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+</head>
+<body>
+    <table border="1" width="120" align="center">
+        <tr>
+            <td>编号</td>
+            <td>姓名</td>
+            <td>成绩</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>小白</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>小黑</td>
+            <td>4</td>
+        </tr>
+    </table>
+<!--colspan 占两行 rowspan 占两列-->
+    <table border="1" width="120" align="right">
+        <thead>
+        <caption>狗信息表</caption>
+        <tr bgcolor="blue" align="center">
+            <td rowspan="2">编号</td>
+            <td>姓名</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr bgcolor="red" align="left">
+            <td>小白</td>
+            <td>4</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr bgcolor="green">
+            <td>2</td>
+            <td>小黑</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr bgcolor="gray" >
+            <td>3</td>
+            <td>傻狗</td>
+            <td colspan="4">0</td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

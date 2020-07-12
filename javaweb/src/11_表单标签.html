@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+<!--from定义表单 代表用户数据采集范围
+    属性：
+        *action提交指定数据的url
+        *method提交方式
+            请求参数是否在地址栏中显示        请求参数长度是否有限制            安全
+        get:显示封装在请求行中                  有限制                      不太安全
+        post:不显示封装在请求体中(http协议)      无限制                      较为安全
+
+        -->
+<form action = "#" method="get">
+用户名：<input name="username"><br>
+密码：<input name="password"><br>
+    <input type="submit" value="登录">
+</form>
+</body>
+</html>

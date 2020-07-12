@@ -6,7 +6,7 @@ import java.io.FileFilter;
 public class LambdaQuickly {
  
         public static void main(String[] args) {
-            File file = new File("C:\\Users\\admin\\Desktop\\javaWeb\\tomcat9.0\\apache-tomcat-9.0.22\\webapps\\jforum");
+            File file = new File("E:\\");
             getAllFile(file);
         }
 
@@ -15,7 +15,7 @@ public class LambdaQuickly {
             File[] files = dir.listFiles(new FileFilter(){
                 @Override
                 public boolean accept(File pathname){
-                    return pathname.isDirectory() || pathname.getName().startsWith("mysql-connection");
+                    return pathname.isDirectory() || pathname.getName().startsWith("typora");
                 }
 
             });//传递过滤器对象
