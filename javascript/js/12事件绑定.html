@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onclick</title>
+
+</head>
+<body>
+<img id="dog" src="../image/傻狗.jpg" onclick="fun()">
+<!--<img id="dog2" src="../image/99398.jpg">-->
+<script>
+    /*function fun() {
+        alert("have clicked")
+    }
+
+    function fun2() {
+        alert("have clicked again(╯▔皿▔)╯")
+    }
+    var dog2 = document.getElementById("dog2");
+    dog2.onclick=fun2;*/
+    var dog = document.getElementById("dog")
+    var flag = false;//dog
+    dog.onclick = function () {
+        if (flag) {
+            dog.src = "../image/351424.jpg" //狗2
+            flag = false;
+        }else{
+            dog.src = "../image/傻狗.jpg"//狗1
+            flag = true;
+        }
+    }
+
+</script>
+
+</body>
+</html>

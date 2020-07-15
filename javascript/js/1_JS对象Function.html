@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+    <script>
+        // length形参个数
+        /*var fun = new Function("a","b","alert(a);");
+        alert(fun.length);
+        function fun1(a,b) {
+            alert(a+b)
+        }
+        fun1(3,4);
+        var fun2 = function (a,b) {
+            alert(a+b);
+        }
+        fun2(3,4);*/
+        
+        function add (){
+            var sum = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
+
+        var sum = add(1,2,3,4);
+        alert(sum);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp正则表达式</title>
+    <script>
+        // 1. test(参数):验证指定的字符串是否符合正则定义的规范
+        var reg = new RegExp("\w{6,12}");
+        var reg1 = /^\w{6,12}$/;
+        // alert(reg);
+        // alert(reg1);
+
+        var name = "zhangsan";
+        var flag = reg1.test(name);
+        alert(flag);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

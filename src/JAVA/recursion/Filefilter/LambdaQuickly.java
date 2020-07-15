@@ -6,7 +6,7 @@ import java.io.FileFilter;
 public class LambdaQuickly {
  
         public static void main(String[] args) {
-            File file = new File("E:\\");
+            File file = new File("E:\\Program Files (x86)");
             getAllFile(file);
         }
 

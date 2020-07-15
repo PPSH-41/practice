@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <script>
+        var number = 1;
+        function fun() {
+            number++;
+
+            var photo = document.getElementById("photo");
+            photo.src = "../image/65848.jpg";
+        }
+        setInterval(fun,3000);
+    </script>
+</head>
+<body>
+<img id="photo" src="../image/傻狗.jpg" width="100%">
+</body>
+</html>

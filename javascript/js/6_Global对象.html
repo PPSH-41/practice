@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>global</title>
+    <script>
+        /*      encodeURI():url编码
+			    decodeURI():url解码
+
+			    encodeURIComponent():url编码,编码的字符更多
+			    decodeURIComponent():url解码
+
+			    parseInt():将字符串转为数字
+			        * 逐一判断每一个字符是否是数字，直到不是数字为止，将前边数字部分转为number
+			    isNaN():判断一个值是否是NaN
+			        * NaN六亲不认，连自己都不认。NaN参与的==比较全部问false
+			    eval():将 JavaScript 字符串，并把它作为脚本代码来执行*/
+        var name = "http://www.baidu.com/wd=三峡大学";
+        document.write(encodeURI(name)+"<br>");
+        var nameurl = "%E4%B8%89%E5%B3%A1%E5%A4%A7%E5%AD%A6 ";
+        document.write(decodeURI(nameurl)+"<br>");
+        document.write(encodeURIComponent(name)+"<br>");
+        var nameurlmore = encodeURIComponent(name);
+        document.write(decodeURIComponent(name)+"<br>");
+
+        var str = "a1234bc";
+        var number = parseInt(str)
+        document.write(number+1+"<br>");
+
+        var a ="NaN";
+        document.write(isNaN(a));
+
+        var jscode = "alert(123)";
+        eval(jscode);
+        </script>
+</head>
+<body>
+
+</body>
+</html>
